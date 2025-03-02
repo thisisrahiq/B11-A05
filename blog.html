@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="./assets/board.png" type="icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#F4F7FF] pb-8">
+    <header class="py-5">
+      <nav
+        class="container py-4 px-6 bg-white mx-auto rounded-2xl flex justify-between items-center"
+      >
+        <div class="logo flex items-center gap-2">
+          <div>
+            <img class="w-12" src="./assets/logo.png" alt="" />
+          </div>
+          <h2 class="font-light text-4xl">
+            Dev<span class="font-bold">Board</span>
+          </h2>
+        </div>
+
+        <button
+          id="back-btn"
+          class="btn btn-active btn-primary font-medium text-base py-3 px-5"
+        >
+          Back to Desk
+        </button>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4">
+      <h1 class="font-bold text-4xl text-center py-6">Blogs</h1>
+
+      <div class="space-y-6">
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h1 class="text-xl font-bold mb-4">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <p class="text-base text-[#00303c] leading-relaxed">
+            Elements can be selected using different methods in JavaScript, such
+            as:
+            <br />
+            - <strong class="font-medium">getElementById("id")</strong> to
+            select an element by its unique ID. <br />
+            -
+            <strong class="font-medium">getElementsByClassName("class")</strong>
+            to select all elements with a class. <br />
+            -
+            <strong class="font-medium">getElementsByTagName("tag")</strong> to
+            get elements by tag name. <br />
+            -
+            <strong class="font-medium"
+              >querySelector(".class or #id or tag")</strong
+            >
+            for the first matching element. <br />
+            -
+            <strong class="font-medium"
+              >querySelectorAll(".class or tag")</strong
+            >
+            to select all matching elements. <br />
+            - <strong class="font-medium">getElementsByName("name")</strong> to
+            select elements by name attribute.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h1 class="text-xl font-bold mb-4">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent?
+          </h1>
+          <p class="text-base text-[#00303c] leading-relaxed">
+            - <strong class="font-medium">innerHTML</strong>: Retrieves or sets
+            the entire HTML content of an element. <br />
+            - <strong class="font-medium">innerText</strong>: Retrieves or sets
+            only the visible text inside an element. <br />
+            - <strong class="font-medium">textContent</strong>: Retrieves or
+            sets the text inside an element, including hidden elements.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h1 class="text-xl font-bold mb-4">
+            Question-3: What is event delegation in the DOM?
+          </h1>
+          <p class="text-base text-[#00303c] leading-relaxed">
+            Event delegation is a technique where a single event listener is
+            placed on a parent element to handle events on its child elements
+            dynamically. This reduces the number of event listeners and improves
+            performance.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h1 class="text-xl font-bold mb-4">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <p class="text-base text-[#00303c] leading-relaxed">
+            Event bubbling is when an event starts from the target element and
+            propagates upward through its parent elements. This allows parent
+            elements to listen for events on their children without attaching
+            individual event listeners.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h1 class="text-xl font-bold mb-4">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+          <p class="text-base text-[#00303c] leading-relaxed">
+            - To create an element:
+            <strong class="font-medium">document.createElement("tag")</strong>.
+            <br />
+            - To add an element:
+            <strong class="font-medium"
+              >parentElement.appendChild(childElement)</strong
+            >
+            or
+            <strong class="font-medium"
+              >insertBefore(newElement, referenceElement)</strong
+            >.
+            <br />
+            - To remove an element:
+            <strong class="font-medium"
+              >parentElement.removeChild(childElement)</strong
+            >.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/blog.js"></script>
+  </body>
+</html>
