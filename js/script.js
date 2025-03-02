@@ -1,4 +1,3 @@
-// theme change
 function theme() {
   const colors = [
     "bg-gray-100 ",
@@ -19,7 +18,6 @@ function theme() {
 
 theme();
 
-// cureent date function
 function cureentDate() {
   let date = new Date();
   let optionsWeekday = { weekday: "short" };
@@ -36,12 +34,10 @@ function cureentDate() {
 }
 cureentDate();
 
-// blog page btn
 document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "../devboard/blog.html";
+  window.location.href = "/blog.html";
 });
 
-// card btn
 const completedTasks = document.getElementById("completed-tasks");
 const countTask = document.getElementById("count-task");
 
@@ -83,19 +79,7 @@ for (let card of cards) {
   });
 }
 
-// clear history
 document.getElementById("clear-btn").addEventListener("click", function () {
   const history = document.getElementById("history");
   history.innerHTML = "";
-});
-
-function openBlog() {
-  window.open("blog.html", "_blank");
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  let blogBtn = document.getElementById("blog-btn");
-  if (blogBtn) {
-    blogBtn.addEventListener("click", openBlog);
-  }
 });
