@@ -83,3 +83,7 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   const history = document.getElementById("history");
   history.innerHTML = "";
 });
+
+function openBlog() {
+  window.location.href = "blog.html";
+}
