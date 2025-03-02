@@ -35,7 +35,7 @@ function cureentDate() {
 cureentDate();
 
 document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "../blog.html";
+  window.location.href = "blog.html";
 });
 
 const completedTasks = document.getElementById("completed-tasks");
